@@ -278,6 +278,16 @@
             background-color: #5a6268;
         }
         
+        .button-danger {
+            background-color: #dc3545;
+            color: white;
+            margin-left: 10px;
+        }
+        
+        .button-danger:hover {
+            background-color: #c82333;
+        }
+        
         .button-container {
             display: flex;
             align-items: center;
@@ -837,6 +847,9 @@
                     <button class="button button-secondary" id="exportEvaluation" onclick="exportResults('evaluation')" disabled>
                         📋 Ergebnisse exportieren
                     </button>
+                    <button class="button button-danger" onclick="resetForm('evaluation')">
+                        🔄 Zurücksetzen
+                    </button>
                 </div>
 
                 <div id="evaluationResults" class="results" style="display: none;">
@@ -1031,7 +1044,7 @@
                         <div class="question-controls">
                             <span class="label">Wichtigkeit:</span>
                             <select class="dropdown dropdown-improvement" data-improvement="16" data-type="importance"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
-                            <span class="label">Umsetzbarkeit:</span>
+                                                       <span class="label">Umsetzbarkeit:</span>
                             <select class="dropdown dropdown-improvement" data-improvement="16" data-type="feasibility"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                             <span class="label">Partner-Bereitschaft:</span>
                             <select class="dropdown dropdown-improvement" data-improvement="16" data-type="partner"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
@@ -1274,6 +1287,9 @@
                     </button>
                     <button class="button button-secondary" id="exportImprovement" onclick="exportResults('improvement')" disabled>
                         📋 Ergebnisse exportieren
+                    </button>
+                    <button class="button button-danger" onclick="resetForm('improvement')">
+                        🔄 Zurücksetzen
                     </button>
                 </div>
                 
@@ -1640,6 +1656,31 @@
 
         // Auto-save on change
         document.querySelectorAll('.dropdown, .dropdown-improvement').forEach(select => {
+            select.addEventListener('change', saveProgress);
+        });
+
+        function resetForm(type) {
+                if (!confirm(`Möchten Sie wirklich alle Eingaben im Bereich "${type === 'evaluation' ? 'Beziehungs-Evaluation' : 'Verbesserungsplaner'}" zurücksetzen?`)) {
+                    return;
+                }
+
+                const container = document.getElementById(type);
+                container.querySelectorAll('select').forEach(select => {
+                    select.selectedIndex = 0;
+                });
+
+                const resultsContainer = document.getElementById(`${type}Results`);
+                resultsContainer.style.display = 'none';
+                resultsContainer.innerHTML = '';
+
+                document.getElementById(`export${type.charAt(0).toUpperCase() + type.slice(1)}`).disabled = true;
+
+                // After resetting, save the new empty state
+                saveProgress();
+            }
+
+            // Auto-save on change
+            document.querySelectorAll('.dropdown, .dropdown-improvement').forEach(select => {
             select.addEventListener('change', saveProgress);
         });
 
