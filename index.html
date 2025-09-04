@@ -127,11 +127,6 @@
             color: #2c3e50;
         }
         
-        .reverse {
-            color: #e74c3c;
-            font-weight: bold;
-        }
-        
         .question-controls {
             display: flex;
             align-items: center;
@@ -192,6 +187,7 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 15px;
             border-radius: 8px;
+            color: white;
         }
         
         .result-item h4 {
@@ -226,6 +222,7 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             margin-top: 20px;
+            color: white;
         }
         
         .overall-score {
@@ -312,6 +309,33 @@
             margin-bottom: 10px;
             border-radius: 8px;
             border-left: 4px solid #3498db;
+            color: #2c3e50;
+        }
+        
+        .priority-display {
+            margin-left: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .priority-highest {
+            color: #e74c3c;
+        }
+        
+        .priority-high {
+            color: #e67e22;
+        }
+        
+        .priority-medium {
+            color: #f39c12;
+        }
+        
+        .priority-low {
+            color: #27ae60;
+        }
+        
+        .priority-lowest {
+            color: #95a5a6;
         }
         
         @media (max-width: 768px) {
@@ -432,7 +456,7 @@
                     </div>
                     
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 6. Ich denke häufig daran, wie es wäre, Single zu sein</div>
+                        <div class="question-text">6. Ich denke häufig daran, wie es wäre, Single zu sein</div>
                         <div class="question-controls">
                             <select class="dropdown dropdown-evaluation" data-question="6" data-reverse="true">
                                 <option value="">Bewertung wählen</option>
@@ -520,7 +544,7 @@
                     </div>
                     
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 12. Wir streiten häufig über dieselben Themen, ohne Lösungen zu finden</div>
+                        <div class="question-text">12. Wir streiten häufig über dieselben Themen, ohne Lösungen zu finden</div>
                         <div class="question-controls">
                             <select class="dropdown dropdown-evaluation" data-question="12" data-reverse="true">
                                 <option value="">Bewertung wählen</option>
@@ -562,7 +586,7 @@
                     </div>
                     
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 15. Nach Streitigkeiten herrscht oft tagelang schlechte Stimmung</div>
+                        <div class="question-text">15. Nach Streitigkeiten herrscht oft tagelang schlechte Stimmung</div>
                         <div class="question-controls">
                             <select class="dropdown dropdown-evaluation" data-question="15" data-reverse="true">
                                 <option value="">Bewertung wählen</option>
@@ -605,7 +629,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="19" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 20. Unsere Vorstellungen von Familie und Kindern sind unvereinbar</div>
+                        <div class="question-text">20. Unsere Vorstellungen von Familie und Kindern sind unvereinbar</div>
                         <select class="dropdown dropdown-evaluation" data-question="20" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
@@ -621,7 +645,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="23" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 24. Ich muss oft meine eigenen Werte kompromittieren</div>
+                        <div class="question-text">24. Ich muss oft meine eigenen Werte kompromittieren</div>
                         <select class="dropdown dropdown-evaluation" data-question="24" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                 </div>
@@ -641,7 +665,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="27" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 28. Ich überprüfe heimlich die Aktivitäten meines Partners</div>
+                        <div class="question-text">28. Ich überprüfe heimlich die Aktivitäten meines Partners</div>
                         <select class="dropdown dropdown-evaluation" data-question="28" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
@@ -649,7 +673,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="29" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 30. Mein Partner hat schon einmal mein Vertrauen missbraucht</div>
+                        <div class="question-text">30. Mein Partner hat schon einmal mein Vertrauen missbraucht</div>
                         <select class="dropdown dropdown-evaluation" data-question="30" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
@@ -669,15 +693,22 @@
                         <select class="dropdown dropdown-evaluation" data-question="33" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 34. Mein Partner kritisiert mich häufig oder macht mich schlecht</div>
+                        <div class="question-text">34. Mein Partner kritisiert mich häufig oder macht mich schlecht</div>
                         <select class="dropdown dropdown-evaluation" data-question="34" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
                         <div class="question-text">35. Wir achten die Grenzen und Bedürfnisse des anderen</div>
-                        <select class="dropdown dropdown-evaluation" data-question="35" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                        <select class="dropdown dropdown-evaluation" data-question="35" data-reverse="false">
+                            <option value="">Bewertung wählen</option>
+                            <option value="1">1 - Trifft überhaupt nicht zu</option>
+                            <option value="2">2 - Trifft eher nicht zu</option>
+                            <option value="3">3 - Neutral/teilweise</option>
+                            <option value="4">4 - Trifft eher zu</option>
+                            <option value="5">5 - Trifft vollständig zu</option>
+                        </select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 36. Ich fühle mich oft kleingemacht oder nicht ernst genommen</div>
+                        <div class="question-text">36. Ich fühle mich oft kleingemacht oder nicht ernst genommen</div>
                         <div class="question-controls">
                             <select class="dropdown dropdown-evaluation" data-question="36" data-reverse="true">
                                 <option value="">Bewertung wählen</option>
@@ -715,7 +746,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="39" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 40. Körperliche Nähe fühlt sich oft gezwungen oder unangenehm an</div>
+                        <div class="question-text">40. Körperliche Nähe fühlt sich oft gezwungen oder unangenehm an</div>
                         <select class="dropdown dropdown-evaluation" data-question="40" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
@@ -727,7 +758,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="42" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 43. Romantische Gesten sind selten geworden</div>
+                        <div class="question-text">43. Romantische Gesten sind selten geworden</div>
                         <select class="dropdown dropdown-evaluation" data-question="43" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                 </div>
@@ -743,7 +774,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="45" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 46. Ich fühle mich in meiner Entwicklung eingeschränkt</div>
+                        <div class="question-text">46. Ich fühle mich in meiner Entwicklung eingeschränkt</div>
                         <select class="dropdown dropdown-evaluation" data-question="46" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
@@ -751,7 +782,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="47" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 48. Mein Partner ist eifersüchtig oder kontrollierend</div>
+                        <div class="question-text">48. Mein Partner ist eifersüchtig oder kontrollierend</div>
                         <select class="dropdown dropdown-evaluation" data-question="48" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
@@ -771,20 +802,48 @@
                         <select class="dropdown dropdown-evaluation" data-question="51" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 52. Geld ist ein häufiger Streitpunkt zwischen uns</div>
-                        <select class="dropdown dropdown-evaluation" data-question="52" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                        <div class="question-text">52. Geld ist ein häufiger Streitpunkt zwischen uns</div>
+                        <select class="dropdown dropdown-evaluation" data-question="52" data-reverse="true">
+                            <option value="">Bewertung wählen</option>
+                            <option value="1">1 - Trifft überhaupt nicht zu</option>
+                            <option value="2">2 - Trifft eher nicht zu</option>
+                            <option value="3">3 - Neutral/teilweise</option>
+                            <option value="4">4 - Trifft eher zu</option>
+                            <option value="5">5 - Trifft vollständig zu</option>
+                        </select>
                     </div>
                     <div class="question">
                         <div class="question-text">53. Wir können gut gemeinsame Entscheidungen treffen</div>
-                        <select class="dropdown dropdown-evaluation" data-question="53" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                        <select class="dropdown dropdown-evaluation" data-question="53" data-reverse="false">
+                            <option value="">Bewertung wählen</option>
+                            <option value="1">1 - Trifft überhaupt nicht zu</option>
+                            <option value="2">2 - Trifft eher nicht zu</option>
+                            <option value="3">3 - Neutral/teilweise</option>
+                            <option value="4">4 - Trifft eher zu</option>
+                            <option value="5">5 - Trifft vollständig zu</option>
+                        </select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 54. Unsere Schlaf- und Lebensrhythmen sind völlig unvereinbar</div>
-                        <select class="dropdown dropdown-evaluation" data-question="54" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                        <div class="question-text">54. Unsere Schlaf- und Lebensrhythmen sind völlig unvereinbar</div>
+                        <select class="dropdown dropdown-evaluation" data-question="54" data-reverse="true">
+                            <option value="">Bewertung wählen</option>
+                            <option value="1">1 - Trifft überhaupt nicht zu</option>
+                            <option value="2">2 - Trifft eher nicht zu</option>
+                            <option value="3">3 - Neutral/teilweise</option>
+                            <option value="4">4 - Trifft eher zu</option>
+                            <option value="5">5 - Trifft vollständig zu</option>
+                        </select>
                     </div>
                     <div class="question">
                         <div class="question-text">55. Haushalt und Verantwortlichkeiten werden fair aufgeteilt</div>
-                        <select class="dropdown dropdown-evaluation" data-question="55" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                        <select class="dropdown dropdown-evaluation" data-question="55" data-reverse="false">
+                            <option value="">Bewertung wählen</option>
+                            <option value="1">1 - Trifft überhaupt nicht zu</option>
+                            <option value="2">2 - Trifft eher nicht zu</option>
+                            <option value="3">3 - Neutral/teilweise</option>
+                            <option value="4">4 - Trifft eher zu</option>
+                            <option value="5">5 - Trifft vollständig zu</option>
+                        </select>
                     </div>
                 </div>
 
@@ -792,22 +851,43 @@
                     <h3><span class="section-icon">👨‍👩‍👧‍👦</span>9. Soziales Umfeld und Familie</h3>
                     <div class="question">
                         <div class="question-text">56. Mein Partner kommt gut mit meiner Familie und Freunden aus</div>
-                        <select class="dropdown dropdown-evaluation" data-question="56" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                        <select class="dropdown dropdown-evaluation" data-question="56" data-reverse="false">
+                            <option value="">Bewertung wählen</option>
+                            <option value="1">1 - Trifft überhaupt nicht zu</option>
+                            <option value="2">2 - Trifft eher nicht zu</option>
+                            <option value="3">3 - Neutral/teilweise</option>
+                            <option value="4">4 - Trifft eher zu</option>
+                            <option value="5">5 - Trifft vollständig zu</option>
+                        </select>
                     </div>
                     <div class="question">
                         <div class="question-text">57. Ich fühle mich wohl mit dem sozialen Umfeld meines Partners</div>
-                        <select class="dropdown dropdown-evaluation" data-question="57" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                        <select class="dropdown dropdown-evaluation" data-question="57" data-reverse="false">
+                            <option value="">Bewertung wählen</option>
+                            <option value="1">1 - Trifft überhaupt nicht zu</option>
+                            <option value="2">2 - Trifft eher nicht zu</option>
+                            <option value="3">3 - Neutral/teilweise</option>
+                            <option value="4">4 - Trifft eher zu</option>
+                            <option value="5">5 - Trifft vollständig zu</option>
+                        </select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 58. Wichtige Menschen in meinem Leben haben Bedenken wegen der Beziehung</div>
-                        <select class="dropdown dropdown-evaluation" data-question="58" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                        <div class="question-text">58. Wichtige Menschen in meinem Leben haben Bedenken wegen der Beziehung</div>
+                        <select class="dropdown dropdown-evaluation" data-question="58" data-reverse="true">
+                            <option value="">Bewertung wählen</option>
+                            <option value="1">1 - Trifft überhaupt nicht zu</option>
+                            <option value="2">2 - Trifft eher nicht zu</option>
+                            <option value="3">3 - Neutral/teilweise</option>
+                            <option value="4">4 - Trifft eher zu</option>
+                            <option value="5">5 - Trifft vollständig zu</option>
+                        </select>
                     </div>
                     <div class="question">
                         <div class="question-text">59. Wir haben gemeinsame Freunde und soziale Aktivitäten</div>
                         <select class="dropdown dropdown-evaluation" data-question="59" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 60. Ich isoliere mich zunehmend von meinem sozialen Umfeld</div>
+                        <div class="question-text">60. Ich isoliere mich zunehmend von meinem sozialen Umfeld</div>
                         <select class="dropdown dropdown-evaluation" data-question="60" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                 </div>
@@ -823,7 +903,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="62" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 63. Ich denke oft daran, was ich verpassen könnte</div>
+                        <div class="question-text">63. Ich denke oft daran, was ich verpassen könnte</div>
                         <select class="dropdown dropdown-evaluation" data-question="63" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
@@ -831,7 +911,7 @@
                         <select class="dropdown dropdown-evaluation" data-question="64" data-reverse="false"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
-                        <div class="question-text"><span class="reverse">(R)</span> 65. Einer von uns ist deutlich mehr interessiert als der andere</div>
+                        <div class="question-text">65. Einer von uns ist deutlich mehr interessiert als der andere</div>
                         <select class="dropdown dropdown-evaluation" data-question="65" data-reverse="true"><option value="">Bewertung</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
                     </div>
                     <div class="question">
@@ -872,66 +952,192 @@
                         <div class="question-text">1. Wir sollten regelmäßige "Beziehungsgespräche" führen (wöchentlich/monatlich)</div>
                         <div class="question-controls">
                             <span class="label">Wichtigkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="1" data-type="importance"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="1" data-type="importance">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unwichtig</option>
+                                <option value="2">2 - Wenig wichtig</option>
+                                <option value="3">3 - Mäßig wichtig</option>
+                                <option value="4">4 - Wichtig</option>
+                                <option value="5">5 - Sehr wichtig</option>
+                            </select>
                             <span class="label">Umsetzbarkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="1" data-type="feasibility"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="1" data-type="feasibility">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unmöglich</option>
+                                <option value="2">2 - Sehr schwer</option>
+                                <option value="3">3 - Mäßig schwer</option>
+                                <option value="4">4 - Einfach</option>
+                                <option value="5">5 - Sehr einfach</option>
+                            </select>
                             <span class="label">Partner-Bereitschaft:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="1" data-type="partner"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="1" data-type="partner">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Keine Bereitschaft</option>
+                                <option value="2">2 - Geringe Bereitschaft</option>
+                                <option value="3">3 - Mäßige Bereitschaft</option>
+                                <option value="4">4 - Hohe Bereitschaft</option>
+                                <option value="5">5 - Vollständige Bereitschaft</option>
+                            </select>
                         </div>
                     </div>
                     <div class="question">
                         <div class="question-text">2. Wir brauchen feste Regeln für faire Streitgespräche (keine Beleidigungen, ausreden lassen)</div>
                         <div class="question-controls">
                             <span class="label">Wichtigkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="2" data-type="importance"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="2" data-type="importance">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unwichtig</option>
+                                <option value="2">2 - Wenig wichtig</option>
+                                <option value="3">3 - Mäßig wichtig</option>
+                                <option value="4">4 - Wichtig</option>
+                                <option value="5">5 - Sehr wichtig</option>
+                            </select>
                             <span class="label">Umsetzbarkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="2" data-type="feasibility"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="2" data-type="feasibility">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unmöglich</option>
+                                <option value="2">2 - Sehr schwer</option>
+                                <option value="3">3 - Mäßig schwer</option>
+                                <option value="4">4 - Einfach</option>
+                                <option value="5">5 - Sehr einfach</option>
+                            </select>
                             <span class="label">Partner-Bereitschaft:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="2" data-type="partner"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="2" data-type="partner">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Keine Bereitschaft</option>
+                                <option value="2">2 - Geringe Bereitschaft</option>
+                                <option value="3">3 - Mäßige Bereitschaft</option>
+                                <option value="4">4 - Hohe Bereitschaft</option>
+                                <option value="5">5 - Vollständige Bereitschaft</option>
+                            </select>
                         </div>
                     </div>
                     <div class="question">
                         <div class="question-text">3. Ich wünsche mir, dass mein Partner aktiver zuhört (Handy weg, Augenkontakt)</div>
                         <div class="question-controls">
                             <span class="label">Wichtigkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="3" data-type="importance"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="3" data-type="importance">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unwichtig</option>
+                                <option value="2">2 - Wenig wichtig</option>
+                                <option value="3">3 - Mäßig wichtig</option>
+                                <option value="4">4 - Wichtig</option>
+                                <option value="5">5 - Sehr wichtig</option>
+                            </select>
                             <span class="label">Umsetzbarkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="3" data-type="feasibility"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="3" data-type="feasibility">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unmöglich</option>
+                                <option value="2">2 - Sehr schwer</option>
+                                <option value="3">3 - Mäßig schwer</option>
+                                <option value="4">4 - Einfach</option>
+                                <option value="5">5 - Sehr einfach</option>
+                            </select>
                             <span class="label">Partner-Bereitschaft:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="3" data-type="partner"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="3" data-type="partner">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Keine Bereitschaft</option>
+                                <option value="2">2 - Geringe Bereitschaft</option>
+                                <option value="3">3 - Mäßige Bereitschaft</option>
+                                <option value="4">4 - Hohe Bereitschaft</option>
+                                <option value="5">5 - Vollständige Bereitschaft</option>
+                            </select>
                         </div>
                     </div>
                     <div class="question">
                         <div class="question-text">4. Wir sollten einen "Cooling-Down" Zeitraum bei Streit einführen (24h Bedenkzeit)</div>
                         <div class="question-controls">
                             <span class="label">Wichtigkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="4" data-type="importance"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="4" data-type="importance">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unwichtig</option>
+                                <option value="2">2 - Wenig wichtig</option>
+                                <option value="3">3 - Mäßig wichtig</option>
+                                <option value="4">4 - Wichtig</option>
+                                <option value="5">5 - Sehr wichtig</option>
+                            </select>
                             <span class="label">Umsetzbarkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="4" data-type="feasibility"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="4" data-type="feasibility">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unmöglich</option>
+                                <option value="2">2 - Sehr schwer</option>
+                                <option value="3">3 - Mäßig schwer</option>
+                                <option value="4">4 - Einfach</option>
+                                <option value="5">5 - Sehr einfach</option>
+                            </select>
                             <span class="label">Partner-Bereitschaft:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="4" data-type="partner"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="4" data-type="partner">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Keine Bereitschaft</option>
+                                <option value="2">2 - Geringe Bereitschaft</option>
+                                <option value="3">3 - Mäßige Bereitschaft</option>
+                                <option value="4">4 - Hohe Bereitschaft</option>
+                                <option value="5">5 - Vollständige Bereitschaft</option>
+                            </select>
                         </div>
                     </div>
                     <div class="question">
                         <div class="question-text">5. Paartherapie oder Kommunikationstraining gemeinsam besuchen</div>
                         <div class="question-controls">
                             <span class="label">Wichtigkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="5" data-type="importance"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="5" data-type="importance">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unwichtig</option>
+                                <option value="2">2 - Wenig wichtig</option>
+                                <option value="3">3 - Mäßig wichtig</option>
+                                <option value="4">4 - Wichtig</option>
+                                <option value="5">5 - Sehr wichtig</option>
+                            </select>
                             <span class="label">Umsetzbarkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="5" data-type="feasibility"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="5" data-type="feasibility">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unmöglich</option>
+                                <option value="2">2 - Sehr schwer</option>
+                                <option value="3">3 - Mäßig schwer</option>
+                                <option value="4">4 - Einfach</option>
+                                <option value="5">5 - Sehr einfach</option>
+                            </select>
                             <span class="label">Partner-Bereitschaft:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="5" data-type="partner"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="5" data-type="partner">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Keine Bereitschaft</option>
+                                <option value="2">2 - Geringe Bereitschaft</option>
+                                <option value="3">3 - Mäßige Bereitschaft</option>
+                                <option value="4">4 - Hohe Bereitschaft</option>
+                                <option value="5">5 - Vollständige Bereitschaft</option>
+                            </select>
                         </div>
                     </div>
                     <div class="question">
                         <div class="question-text">6. Ich möchte offener über meine Gefühle sprechen können, ohne Kritik zu befürchten</div>
                         <div class="question-controls">
                             <span class="label">Wichtigkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="6" data-type="importance"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="6" data-type="importance">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unwichtig</option>
+                                <option value="2">2 - Wenig wichtig</option>
+                                <option value="3">3 - Mäßig wichtig</option>
+                                <option value="4">4 - Wichtig</option>
+                                <option value="5">5 - Sehr wichtig</option>
+                            </select>
                             <span class="label">Umsetzbarkeit:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="6" data-type="feasibility"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="6" data-type="feasibility">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Unmöglich</option>
+                                <option value="2">2 - Sehr schwer</option>
+                                <option value="3">3 - Mäßig schwer</option>
+                                <option value="4">4 - Einfach</option>
+                                <option value="5">5 - Sehr einfach</option>
+                            </select>
                             <span class="label">Partner-Bereitschaft:</span>
-                            <select class="dropdown dropdown-improvement" data-improvement="6" data-type="partner"><option value="">Wählen</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+                            <select class="dropdown dropdown-improvement" data-improvement="6" data-type="partner">
+                                <option value="">Wählen</option>
+                                <option value="1">1 - Keine Bereitschaft</option>
+                                <option value="2">2 - Geringe Bereitschaft</option>
+                                <option value="3">3 - Mäßige Bereitschaft</option>
+                                <option value="4">4 - Hohe Bereitschaft</option>
+                                <option value="5">5 - Vollständige Bereitschaft</option>
+                            </select>
                         </div>
                     </div>
                     <div class="question">
@@ -1517,6 +1723,35 @@
         function displayImprovementResults(items) {
             const resultsContainer = document.getElementById('improvementResults');
             
+            // Function to create a visual priority indicator
+            function getPriorityDisplay(priority) {
+                // Normalize priority to 1-5 scale for visual display
+                const normalizedPriority = Math.min(5, Math.max(1, Math.round(priority / 5)));
+                const stars = '★'.repeat(normalizedPriority) + '☆'.repeat(5 - normalizedPriority);
+                
+                let priorityText = '';
+                let priorityClass = '';
+                
+                if (normalizedPriority >= 5) {
+                    priorityText = 'Höchste Priorität';
+                    priorityClass = 'priority-highest';
+                } else if (normalizedPriority >= 4) {
+                    priorityText = 'Hohe Priorität';
+                    priorityClass = 'priority-high';
+                } else if (normalizedPriority >= 3) {
+                    priorityText = 'Mittlere Priorität';
+                    priorityClass = 'priority-medium';
+                } else if (normalizedPriority >= 2) {
+                    priorityText = 'Niedrige Priorität';
+                    priorityClass = 'priority-low';
+                } else {
+                    priorityText = 'Sehr niedrige Priorität';
+                    priorityClass = 'priority-lowest';
+                }
+                
+                return `<span class="priority-display ${priorityClass}" title="${priorityText}">${stars}</span>`;
+            }
+            
             // Categorize items for a more structured action plan
             const quickWins = items.filter(i => i.feasibility >= 4 && i.partner >= 4 && i.importance >= 4);
             const importantDiscussions = items.filter(i => i.importance >= 4 && (i.feasibility < 4 || i.partner < 4));
@@ -1529,7 +1764,7 @@
                 html += `<h3>🚀 Quick Wins (Hohe Priorität & Einfache Umsetzung)</h3>`;
                 html += `<p>Diese Punkte sind Ihnen wichtig und scheinen für Sie beide leicht umsetzbar. Das sind ideale Ansatzpunkte, um schnell positive Veränderungen zu bewirken.</p><ul>`;
                 quickWins.forEach(item => {
-                    html += `<li><strong>${item.text}</strong> (Priorität: ${item.priority.toFixed(0)})</li>`;
+                    html += `<li><strong>${item.text}</strong> ${getPriorityDisplay(item.priority)}</li>`;
                 });
                 html += `</ul>`;
             }
@@ -1538,7 +1773,7 @@
                 html += `<h3>💬 Wichtige Diskussionen (Hohe Priorität & Klärungsbedarf)</h3>`;
                 html += `<p>Diese Themen sind Ihnen sehr wichtig, aber die Umsetzung oder die Bereitschaft Ihres Partners scheint noch unklar. Hier ist ein offenes und ehrliches Gespräch der nächste Schritt.</p><ul>`;
                 importantDiscussions.forEach(item => {
-                    html += `<li><strong>${item.text}</strong> (Priorität: ${item.priority.toFixed(0)})</li>`;
+                    html += `<li><strong>${item.text}</strong> ${getPriorityDisplay(item.priority)}</li>`;
                 });
                 html += `</ul>`;
             }
@@ -1547,7 +1782,7 @@
                 html += `<h3>🗓️ Zukunftsthemen (Mittlere & Geringere Priorität)</h3>`;
                 html += `<p>Diese Punkte können Sie mittelfristig angehen, nachdem Sie sich auf die Quick Wins und die wichtigsten Diskussionen konzentriert haben.</p><ul>`;
                 futureTopics.forEach(item => {
-                    html += `<li><strong>${item.text}</strong> (Priorität: ${item.priority.toFixed(0)})</li>`;
+                    html += `<li><strong>${item.text}</strong> ${getPriorityDisplay(item.priority)}</li>`;
                 });
                 html += `</ul>`;
             }
